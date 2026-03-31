@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>User Registration</h2>
+  <button class="add-btn" onclick="openForm()">Add New</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Age</th>
+      <th>Education</th>
+    </tr>
+  </thead>
+  <tbody id="userTable"></tbody>
+</table>
+
+<div id="sideForm">
+  <h3>Register</h3>
+
+  <input id="name" placeholder="Name">
+  <input id="email" placeholder="Email">
+  <input id="contact" placeholder="Address">
+  <input id="age" placeholder="Age">
+  <input id="education" placeholder="Education">
+  <input id="password" type="password" placeholder="Password">
+
+  <button onclick="saveUser()">Save</button>
+  <button onclick="closeForm()">Cancel</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
